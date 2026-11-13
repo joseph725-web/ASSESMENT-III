@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eee7e5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fffaf6;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 10px;
+    border-top: 4px solid #a66b72;
+    box-shadow: 0 5px 25px rgba(65, 35, 43, 0.10);
+}
+
+h1 {
+    text-align: center;
+    color: #452832;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #987d80;
+    margin-bottom: 30px;
+}
+
+.input-group,
+.currency {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    color: #593c44;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddc9c5;
+    border-radius: 6px;
+    outline: none;
+    background: #ffffff;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #a66b72;
+}
+
+.currency-box {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.currency {
+    flex: 1;
+    min-width: 0;
+}
+
+.swap-btn {
+    background: #f0dedd;
+    color: #713f4b;
+    font-size: 24px;
+    height: 45px;
+    min-width: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.swap-btn:hover {
+    background: #dfbfc0;
+}
+
+.convert-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: #452832;
+    color: #fffaf6;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.convert-btn:hover {
+    background: #a66b72;
+}
+
+.result {
+    background: #f2e8e5;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 25px;
+    text-align: center;
+    border-left: 4px solid #a66b72;
+}
+
+.result p {
+    color: #987d80;
+    margin-bottom: 10px;
+}
+
+.result h2 {
+    color: #452832;
+    font-size: 27px;
+    overflow-wrap: anywhere;
+}
+
+.result small {
+    display: block;
+    color: #987d80;
+    margin-top: 12px;
+}
+
+#status {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #987d80;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 20px;
+    }
+
+    .currency-box {
+        flex-wrap: wrap;
+    }
+}
